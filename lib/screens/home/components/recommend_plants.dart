@@ -76,7 +76,7 @@ class RecommendPlantCard extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            height: size.height * 0.3,
+            height: size.height * 0.25,
             width: size.width * 0.45,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.only(
