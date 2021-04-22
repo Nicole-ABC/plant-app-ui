@@ -77,7 +77,7 @@ class Body extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: EdgeInsets.all(kDefaultPadding *0.75),
+          padding: EdgeInsets.all(kDefaultPadding *0.5),
           child: Row(
             children: [
               RichText(
@@ -118,7 +118,6 @@ class Body extends StatelessWidget {
             children: [
               Container(
                 alignment: Alignment.center,
-                height: size.height * 0.085,
                 width: size.width/2,
                 decoration: BoxDecoration(
                   color: kPrimaryColor,
@@ -134,7 +133,6 @@ class Body extends StatelessWidget {
               ),
               Container(
                 alignment: Alignment.center,
-                height: size.height * 0.085,
                 width: size.width/2,
                 child: Text(
                   'Description',
