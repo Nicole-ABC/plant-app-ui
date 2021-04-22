@@ -72,10 +72,23 @@ class RecommendPlantCard extends StatelessWidget {
           top: kDefaultPadding/2,
           bottom: kDefaultPadding * 2.5
       ),
-      width: size.width * 0.4,
+      width: size.width * 0.45,
       child: Column(
         children: [
-          Image.asset(image),
+          Container(
+            height: size.height * 0.3,
+            width: size.width * 0.45,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.only(
+                topRight: Radius.circular(10),
+                topLeft: Radius.circular(10)
+              ),
+              image: DecorationImage(
+                fit: BoxFit.cover,
+                image: AssetImage(image)
+              )
+            ),
+          ),
           GestureDetector(
             onTap: press,
             child: Container(
